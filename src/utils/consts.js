@@ -1,0 +1,8 @@
+export const ADMIN_ROUTE = '/admin'
+export const LOGIN_ROUTE = '/login'
+export const REGISTRATION_ROUTE = '/registration'
+export const HOME_ROUTE = '/home'
+export const RECIPE_BOOK_ROUTE = '/book-recipe'
+export const RECIPE_ROUTE = '/recipe'
+export const CREATE_RECIPE_ROUTE = '/recipe-create'
+export const FIRST_PAGE_ROUTE = '/'

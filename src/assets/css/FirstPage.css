@@ -1,0 +1,471 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+.firstButton {
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    padding: 14px 16px;
+    border-radius: 50px;
+    margin-top: 60px;
+    margin-right: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #3f3a3a;
+    background: #A78888;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+}
+
+.firstButton:hover {
+    color: #3f3a3a;
+}
+
+.textVer1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    max-height: 77px;
+    max-width: 343px;
+    padding-top: 26px;
+}
+
+.textVer2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2;
+    max-height: 138px;
+    max-width: 480px;
+    padding-bottom: 26px;
+}
+
+main {
+    display: flex;
+}
+
+.imgEat {
+    max-width: 999px;
+    max-height: 562px;
+}
+
+.typeBar {
+    width: 383px;
+    height: 110%;
+    max-width: 383px;
+    margin-left: -33px;
+    margin-top: -24px;
+    padding-left: 62px;
+    padding-right: 27px;
+    padding-top: 25px;
+    background: #8F7C7C;
+    border: 3px solid #5C4141;
+    border-radius: 51px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.typeButton {
+    max-width: 150px;
+    min-width: 130px;
+    max-height: 35px;
+    width: calc(1 / 3 * 100% - (1 - 1 / 3) * 20px);
+    background: #533737;
+    border-radius: 12px;
+    padding: 8px 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    line-height: 1.6;
+    font-size: 12px;
+    font-weight: 700;
+    color: #D2BCBC;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    overflow-x:hidden;
+    text-align: center;
+}
+
+.typeButton:hover {
+    color: #D2BCBC;
+}
+
+.cardRecipe {
+    display: flex;
+}
+
+.recipeList {
+    width: 960px;
+    max-width: 960px;
+    height: 200px;
+    max-height: 200px;
+    margin-left: 87px;
+    margin-top: 42px;
+    margin-right: 48px;
+    padding-left: 44px;
+    padding-top: 39px;
+    padding-right: 46px;
+
+    background: #ADA6A6;
+    border: 2px solid #271A1A;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+}
+
+.recipeImgList {
+    height: 120px;
+    width: 215px;
+    max-height: 120px;
+    max-width: 215px;
+
+}
+
+.recipeImgCard {
+    height: 120px;
+    width: 215px;
+    min-width: 215px;
+    min-height: 120px;
+    cursor: pointer;
+    border: 1px solid #564F4F;
+    box-sizing: border-box;
+    border-radius: 13px;
+    position: relative;
+}
+
+.recipeNameList {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #282626;
+}
+
+.recipeZag {
+    margin-left: 45px;
+}
+
+.timeRate {
+    margin-top: 45px;
+    display: flex;
+}
+
+.time {
+    width: 88px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    margin-right: 23px;
+}
+
+.timeImg {
+    padding-right: 5px;
+}
+
+.rate {
+    width: 48px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+}
+
+.otstup {
+    margin-right: 5px;
+}
+
+.description {
+    margin-left: 26px;
+}
+
+.descriptionText {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #282626;
+}
+
+.globalRecipe {
+    padding-top: 63px;
+    padding-left: 71px;
+}
+
+.infoRecipe {
+    display: flex;
+}
+
+.recipeImg {
+    height: 235px;
+    width: 340px;
+    max-height: 235px;
+    max-width: 340px;
+}
+
+.recipeImgCard2 {
+    height: 235px;
+    width: 340px;
+    max-height: 235px;
+    max-width: 340px;
+    border: 3px solid #564F4F;
+    border-radius: 26px;
+    position: relative;
+}
+
+.recipeZag {
+
+}
+
+.recipeNameList {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.1;
+    align-items: center;
+    color: #282626
+}
+
+.recipeNameList1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.1;
+    align-items: center;
+    color: #282626;
+    margin-top: 20px;
+}
+
+.timeRate {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.time {
+    align-self: center;
+}
+
+.timeImg {
+    max-width: 22px;
+    max-height: 22px;
+}
+
+.timeRateText {
+    margin-top: 6px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.rate {
+    align-self: center;
+}
+
+.addRecipeBookButton {
+    background: #533737;
+    border-radius: 12px;
+    padding: 8px 10px;
+    cursor: pointer;
+    line-height: 1.6;
+    font-size: 12px;
+    font-weight: 700;
+    color: #D2BCBC;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    max-height: 43px;
+    max-width: 173px;
+}
+
+.addRecipeBookButton:hover {
+    color: #D2BCBC;
+}
+
+.description2 {
+    margin-left: 80px;
+}
+
+.ingredients {
+    margin-top: 25px;
+    margin-left: 106px;
+}
+
+.steps {
+    margin-left: 106px;
+    margin-bottom: 100px;
+}
+
+.instructionText {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.1;
+    margin-left: 40%;
+    color: #282626;
+}
+
+.Types {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.1;
+    color: #5C4141;
+    margin-top: 20px;
+}
+
+.good {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.CardAuth {
+    width: 680px;
+    padding: 52px 97px 68px 94px;
+    background: #AFA9A9;
+    border-radius: 20px;
+}
+
+.authText {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.1;
+    align-items: center;
+    text-align: center;
+    color: #453838;
+}
+
+.authTextForm {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.1;
+    align-items: center;
+    text-align: center;
+    color: #453838;
+    background: #C4C4C4;
+    border-radius: 15px;
+}
+
+.authForm {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.globalAuth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input::-webkit-input-placeholder {
+    color: #453838;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.1;
+}
+
+input {
+    width: 490px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background: #C4C4C4;
+    border-radius: 15px;
+    border: #3f3a3a;
+    align-items: center;
+    outline: none;
+    color: #453838;
+}
+
+.authText2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.1;
+    color: #453838;
+}
+
+.authText3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.1;
+    color: #565656;
+    cursor: pointer;
+    margin-left: 6px;
+}
+
+.authText3:hover {
+    color: #453838;
+}
+
+.row2 {
+    margin-top: 20px;
+    display: flex;
+    padding-right: 168px;
+}
+
+.linkAndButton {
+    display: flex;
+    align-items: center;
+}
+
+.authButton {
+    background: #C4C4C4;
+    border: 2px solid #453838;
+    border-radius: 15px;
+    padding: 8px 10px;
+    cursor: pointer;
+    line-height: 1.1;
+    font-size: 15px;
+    font-weight: 700;
+    color: #453838;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.authButton2 {
+    background: #C4C4C4;
+    min-width: 150px;
+    margin-top: 15px;
+    border: 2px solid #453838;
+    border-radius: 15px;
+    padding: 8px 10px;
+    cursor: pointer;
+    line-height: 1.1;
+    font-size: 15px;
+    font-weight: 700;
+    color: #453838;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-align: center;
+}
+
+.authButton2:hover{
+    color: #453838;
+}
+.authButton:hover {
+    color: #453838;
+}
+
+.adminButtons {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    align-items: center;
+}
