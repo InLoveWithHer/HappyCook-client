@@ -6,7 +6,7 @@ const TypeBar = observer(() => {
     const {recipe} = useContext(Context)
     return (
         <div className="typeBar">
-            <div >
+            <div>
                 <h3 className="Types">Типы:</h3>
                 <div className="good">
                     {recipe.types.map(type =>
@@ -19,7 +19,8 @@ const TypeBar = observer(() => {
                 <h3 className="Types">Подтипы:</h3>
                 <div className="good">
                     {recipe.underTypes.map(underType =>
-                        <a className="typeButton"
+                        <a className="typeButton" active={underType.id === recipe.selectedUnderType.id}
+                           onClick={() => recipe.setSelectedUnderType(underType)}
                            key={underType.id}>{underType.name}</a>
                     )}
                 </div>

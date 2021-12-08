@@ -1,9 +1,9 @@
 import React, {useContext} from 'react';
-import {observer} from "mobx-react-lite";
 import {Context} from "../index";
 import RecipeItem from "./RecipeItem";
+import {observer} from "mobx-react-lite";
 
-const RecipeList = observer(() => {
+const BookRecipeList = observer(() => {
     const {recipe} = useContext(Context)
 
     return (
@@ -15,4 +15,4 @@ const RecipeList = observer(() => {
     );
 });
 
-export default RecipeList;
+export default BookRecipeList;

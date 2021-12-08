@@ -24,6 +24,11 @@ const NavBar = observer(() => {
         history.push(LOGIN_ROUTE)
     }
 
+    const global = () => {
+        history.push(HOME_ROUTE)
+        window.location.reload()
+    }
+
     let jwt = localStorage['token'];
     let decode = jwt_decode(jwt);
     let role = decode['role']
@@ -35,7 +40,7 @@ const NavBar = observer(() => {
                 <div className="textDivLogo">
                     <h1 className="textLogo" onClick={() => history.push(FIRST_PAGE_ROUTE)}>HAPPY<br/>COOK</h1>
                 </div>
-                <a className="textA" onClick={() => history.push(HOME_ROUTE)}>Главная</a>
+                <a className="textA" onClick={() => global()}>Главная</a>
                 {user.isAuth ?
                     <div className="navButton">
                         {role === 'ADMIN' ?

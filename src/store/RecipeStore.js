@@ -10,6 +10,9 @@ export default class RecipeStore {
         this.__selectedType = {}
         this.__selectedUnderType = {}
         this.__selectedStep = {}
+        this._page = 1
+        this._totalCount = 0
+        this._limit = 3
         makeAutoObservable(this)
     }
 
@@ -29,11 +32,19 @@ export default class RecipeStore {
         this._steps = steps
     }
 
+    setPage(page) {
+        this._page = page
+    }
+    setTotalCount(count) {
+        this._totalCount = count
+    }
+
     setIngredients(ingredients) {
         this._ingredients = ingredients
     }
 
     setSelectedType(type) {
+        this.setPage(1)
         this.__selectedType = type
     }
 
@@ -42,6 +53,7 @@ export default class RecipeStore {
     }
 
     setSelectedUnderType(underType) {
+        this.setPage(1)
         this.__selectedUnderType = underType
     }
 
@@ -59,6 +71,16 @@ export default class RecipeStore {
 
     get steps() {
         return this._steps
+    }
+
+    get totalCount() {
+        return this._totalCount
+    }
+    get page() {
+        return this._page
+    }
+    get limit() {
+        return this._limit
     }
 
     get ingredients() {

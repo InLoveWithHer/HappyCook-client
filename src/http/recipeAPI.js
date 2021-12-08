@@ -33,8 +33,12 @@ export const createRecipe = async (recipe) => {
     return data
 }
 
-export const fetchRecipe = async () => {
-    const {data} = await $host.get('api/recipe')
+export const fetchRecipe = async (typeId, underTypeId, page, limit = 5) => {
+    const {data} = await $host.get('api/recipe', {
+        params: {
+            typeId, underTypeId, page, limit
+        }
+    })
     return data
 }
 
